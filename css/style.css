@@ -1,0 +1,2153 @@
+@charset "UTF-8";
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  header .inner {
+    padding: 6px 15px;
+  }
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1190px) {
+  header h1 {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+header .head1 {
+  background-color: #D84840;
+  padding: 13px 43px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1190px) {
+  header .head1 {
+    font-size: 11px;
+  }
+}
+
+header .head1:hover {
+  opacity: 1;
+}
+
+header .head2 {
+  background-color: #D84840;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .head2:hover {
+  text-decoration: underline;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#top {
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 120px 0 110px;
+}
+
+@media screen and (max-width: 768px) {
+  #top {
+    padding: 25px 0 30px;
+  }
+}
+
+#top h2 {
+  font-size: 28px;
+  line-height: 2;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1190px) {
+  #top h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top h2 {
+    font-size: 18px;
+  }
+}
+
+#top p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+  #top p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top p {
+    font-size: 15px;
+  }
+}
+
+#second {
+  background-color: #EBB94D;
+  text-align: center;
+  color: #fff;
+  padding: 35px 0;
+}
+
+#second p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1190px) {
+  #second p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #second p {
+    font-size: 15px;
+  }
+}
+
+#second a {
+  background-color: #D84840;
+  padding: 36px 25%;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 45px;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0.8;
+  min-width: 295px;
+}
+
+@media screen and (max-width: 1190px) {
+  #second a {
+    font-size: 18px;
+    padding: 26px 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #second a {
+    font-size: 16px;
+    padding: 26px 18%;
+  }
+}
+
+#second a:hover {
+  opacity: 1;
+}
+
+#second p:nth-child(2) {
+  background-color: #F9F2F4;
+  color: #C7254E;
+  width: 465px;
+  border-radius: 3px;
+  font-size: 16.5px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1190px) {
+  #second p:nth-child(2) {
+    font-size: 14.4px;
+    margin-bottom: 47px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #second p:nth-child(2) {
+    font-size: 15px;
+  }
+}
+
+#second p:nth-child(n+4) {
+  font-size: 23px;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1190px) {
+  #second p:nth-child(n+4) {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #second p:nth-child(n+4) {
+    font-size: 15px;
+  }
+}
+
+#second p:nth-child(4) {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1190px) {
+  #second p:nth-child(4) {
+    margin-top: 60px;
+  }
+}
+
+#second .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#second .sns div {
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+#third {
+  text-align: center;
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 115px;
+  position: relative;
+}
+
+@media screen and (max-width: 1190px) {
+  #third {
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #third {
+    padding-bottom: 60px;
+  }
+}
+
+#third p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1190px) {
+  #third p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #third p {
+    font-size: 15px;
+  }
+}
+
+#third p span {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #EBB94D));
+  background: linear-gradient(transparent 70%, #EBB94D 70%);
+}
+
+#third p:nth-child(5) {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #EBB94D;
+  color: #fff;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 605px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+@media screen and (max-width: 1190px) {
+  #third p:nth-child(5) {
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+    top: 598px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .br::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 80px 10%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1190px) {
+  h3 {
+    font-size: 24px;
+    width: 610px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    width: 430px;
+    padding: 50px 6%;
+    font-size: 18px;
+  }
+}
+
+h3::before, h3::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+h3::before {
+  border-left: solid 3px #EBB94D;
+  border-top: solid 3px #EBB94D;
+  top: 40px;
+  left: 0px;
+}
+
+h3::after {
+  border-right: solid 3px #EBB94D;
+  border-bottom: solid 3px #EBB94D;
+  bottom: 40px;
+  right: 0px;
+}
+
+#fourth {
+  background-color: #FDF5E0;
+  margin-top: -40px;
+  text-align: center;
+  padding: 40px 0 70px;
+  width: 100%;
+}
+
+#fourth .inner {
+  max-width: 1200px;
+}
+
+#fourth .inner > p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1190px) {
+  #fourth .inner > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fourth .inner > p {
+    font-size: 15px;
+  }
+}
+
+#fourth .fourth-box {
+  width: 97.8%;
+  padding: 35px 0 50px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 7px;
+  border: #EBB94D 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#fourth .fourth-box > p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1190px) {
+  #fourth .fourth-box > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fourth .fourth-box > p {
+    font-size: 15px;
+  }
+}
+
+#fourth .fourth-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#fourth .fourth-content {
+  padding: 0 14px;
+  width: 115px;
+}
+
+@media screen and (max-width: 1190px) {
+  #fourth .fourth-content {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fourth .fourth-content {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fourth .fourth-content img {
+    width: auto;
+    height: 35px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  padding: 63px 0 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1190px) {
+  h2 {
+    font-size: 24px;
+    padding-top: 58px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+#fifth {
+  text-align: center;
+  font-weight: bold;
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+#fifth .inner > p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 1190px) {
+  #fifth .inner > p {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fifth .inner > p {
+    font-size: 13px;
+  }
+}
+
+#fifth .inner > p span {
+  color: #EBB94D;
+}
+
+#fifth .fifth-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 22px 5px 0;
+}
+
+@media screen and (max-width: 1190px) {
+  #fifth .fifth-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#fifth .fifth-box .fifth-content {
+  margin: 0 9px;
+  width: 375px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 30px 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+}
+
+@media screen and (max-width: 1190px) {
+  #fifth .fifth-box .fifth-content {
+    margin-bottom: 20px;
+    width: 436px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fifth .fifth-box .fifth-content {
+    padding: 10px 30px;
+  }
+}
+
+#fifth .fifth-box .fifth-content .step {
+  color: #fff;
+  background-color: #EBB94D;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  #fifth .fifth-box .fifth-content .step {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+#fifth .fifth-box .fifth-content p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1190px) {
+  #fifth .fifth-box .fifth-content p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+#blue {
+  background-color: #036EA9;
+  text-align: center;
+  padding: 38px 0;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #blue {
+    padding: 20px 0;
+  }
+}
+
+#blue p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+#blue p span {
+  color: #EBB94D;
+}
+
+@media screen and (max-width: 1190px) {
+  #blue p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #blue p {
+    font-size: 12px;
+  }
+}
+
+#six {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+#six small {
+  font-size: 16px;
+}
+
+#six p {
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 1190px) {
+  #six p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #six p {
+    font-size: 15px;
+  }
+}
+
+#six .six-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#six .six-box img {
+  margin: 0 22px;
+  width: 20%;
+  height: auto;
+}
+
+#six p:last-child {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: -25px;
+}
+
+@media screen and (max-width: 1190px) {
+  #six p:last-child {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #six p:last-child {
+    font-size: 12px;
+  }
+}
+
+#seven {
+  text-align: center;
+  background-color: #FFF4E0;
+}
+
+@media screen and (max-width: 768px) {
+  #seven {
+    padding-bottom: 40px;
+  }
+}
+
+#seven h3 {
+  padding: 57.5px;
+}
+
+@media screen and (max-width: 768px) {
+  #seven h3 {
+    padding: 50px 6%;
+  }
+}
+
+#seven span {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1190px) {
+  #seven span {
+    font-size: 16px;
+  }
+}
+
+#seven .seven-img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-img-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#seven .seven-img-box .seven-img-content {
+  max-width: 360px;
+  margin: 0 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1190px) {
+  #seven .seven-img-box .seven-img-content {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-img-box .seven-img-content {
+    max-width: 805px;
+    text-align: center;
+  }
+}
+
+#seven .seven-img-box .seven-img-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #EBB94D;
+  padding: 5px 0 10px;
+}
+
+@media screen and (max-width: 1190px) {
+  #seven .seven-img-box .seven-img-content h4 {
+    font-size: 16px;
+  }
+}
+
+#seven .seven-img-box .seven-img-content img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1190px) {
+  #seven .seven-img-box .seven-img-content img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven .seven-img-box .seven-img-content img {
+    width: 95%;
+    height: 120px;
+  }
+}
+
+#seven .seven-img-box .seven-img-content p {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+@media screen and (max-width: 1190px) {
+  #seven .seven-img-box .seven-img-content p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-img-box .seven-img-content p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven .seven-img-box .seven-img-content p {
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+#seven .seven-box {
+  background-color: #fff;
+  border-radius: 7px;
+  border: #EBB94D 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 97.8%;
+  margin: 50px auto 40px;
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-box {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven .seven-box {
+    width: 95%;
+  }
+}
+
+#seven .seven-box h2 {
+  color: #EBB94D;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-box h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven .seven-box h2 {
+    font-size: 18px;
+    margin-top: -40px;
+  }
+}
+
+#seven .seven-box h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-box h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven .seven-box h4 {
+    font-size: 15px;
+  }
+}
+
+#seven .seven-box p {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: bold;
+  padding: 15px 0 52px;
+}
+
+@media screen and (max-width: 990px) {
+  #seven .seven-box p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven .seven-box p {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+}
+
+#seven p:last-child {
+  padding-bottom: 50px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 990px) {
+  #seven p:last-child {
+    font-size: 12px;
+    max-width: 850px;
+    margin: 40px auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #seven p:last-child {
+    font-size: 10px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+
+section {
+  text-align: center;
+}
+
+#eight {
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/teacherbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 20px 0px 40px;
+}
+
+#eight .eight-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  #eight .eight-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#eight .inner > p {
+  padding: 20px 0 210px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #eight .inner > p {
+    font-size: 12px;
+  }
+}
+
+#eight .eight-content {
+  width: 31%;
+  margin: 0 15px;
+  padding: 40px;
+  border: #fff 2px solid;
+  position: relative;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  #eight .eight-content {
+    width: 83%;
+    margin-bottom: 125px;
+    padding: 40px 30px 10px;
+  }
+  #eight .eight-content:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#eight .eight-content img {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 18%;
+  -webkit-transform: translateY(-85%) translateX(1em);
+          transform: translateY(-85%) translateX(1em);
+}
+
+@media screen and (max-width: 768px) {
+  #eight .eight-content img {
+    left: 35%;
+    -webkit-transform: translateY(-75%) translateX(1em);
+            transform: translateY(-75%) translateX(1em);
+    width: 125px;
+    height: 125px;
+  }
+}
+
+#eight .eight-content p {
+  padding-bottom: 15px;
+  line-height: 1.55;
+}
+
+@media screen and (max-width: 768px) {
+  #eight .eight-content p {
+    font-size: 12px;
+  }
+}
+
+#eight .eight-content p:last-child {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  #eight .eight-content p:last-child {
+    font-size: 12px;
+  }
+}
+
+#yellow {
+  position: relative;
+  background-color: #EBB94D;
+  color: #fff;
+  padding: 40px 0;
+}
+
+#yellow p {
+  background-color: #fff;
+  color: #EBB94D;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+#yellow h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 1190px) {
+  #yellow h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #yellow h3 {
+    font-size: 14px;
+  }
+}
+
+#yellow h3::before, #yellow h3::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#yellow h3::before {
+  border-left: solid 4px #fff;
+  border-top: solid 4px #fff;
+  top: 0px;
+  left: 0px;
+}
+
+#yellow h3::after {
+  border-right: solid 4px #fff;
+  border-bottom: solid 4px #fff;
+  bottom: 0px;
+  right: 0px;
+}
+
+#yellow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #EBB94D transparent transparent transparent;
+  border-width: 25px 25px 0 25px;
+}
+
+#nine {
+  padding-bottom: 20px;
+}
+
+#nine h2 {
+  margin-top: -20px;
+}
+
+#nine h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1190px) {
+  #nine h4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nine h4 {
+    font-size: 12px;
+  }
+}
+
+#nine p {
+  padding: 35px 0 30px;
+}
+
+@media screen and (max-width: 1190px) {
+  #nine p {
+    font-size: 12px;
+  }
+}
+
+#nine .nine-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 765px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1190px) {
+  #nine .nine-box {
+    margin: 0 0 40px;
+  }
+}
+
+#nine .nine-box img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: #EBB94D 2px solid;
+  width: 30%;
+  height: auto;
+}
+
+#nine .nine-box aside {
+  width: 485px;
+  text-align: left;
+  color: #777777;
+  font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+  padding: 0 6px;
+}
+
+#nine .nine-box aside p {
+  font-size: 18px;
+  margin: -17px 0 -18px;
+}
+
+#nine .nine-box aside span {
+  text-decoration: underline;
+}
+
+#ten {
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-bottom: 80px;
+}
+
+#ten p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1190px) {
+  #ten p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ten p {
+    font-size: 12px;
+  }
+}
+
+#ten .ten-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  #ten .ten-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#ten .ten-content {
+  width: 375px;
+  border: #036EA9 2px solid;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 1190px) {
+  #ten .ten-content {
+    width: 270px;
+    margin: 9px 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #ten .ten-content {
+    width: 585px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ten .ten-content {
+    width: 95%;
+  }
+}
+
+#ten .ten-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+  background-color: #036EA9;
+}
+
+@media screen and (max-width: 1190px) {
+  #ten .ten-content h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ten .ten-content h4 {
+    font-size: 15px;
+  }
+}
+
+#ten .ten-content li {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 15px;
+  border-bottom: #ccc .4px dotted;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1190px) {
+  #ten .ten-content li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ten .ten-content li {
+    font-size: 12px;
+  }
+}
+
+#ten .ten-content li:first-child {
+  padding-top: 20px;
+}
+
+#blue2 {
+  background-color: #036EA9;
+  color: #fff;
+}
+
+#blue2 p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px 0;
+  line-height: 1.55;
+}
+
+@media screen and (max-width: 1190px) {
+  #blue2 p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #blue2 p {
+    font-size: 15px;
+    padding: 20px 0;
+  }
+}
+
+#eleven {
+  padding-bottom: 40px;
+}
+
+#eleven .flow {
+  margin: 35px 0 40px;
+}
+
+#eleven .inner > img {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  #eleven .inner > img {
+    display: none;
+  }
+}
+
+#eleven .eleven-box {
+  background-color: #FDF5E0;
+  max-width: 96.6%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 60px 30px 40px;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 1190px) {
+  #eleven .eleven-box {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #eleven .eleven-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px auto;
+    padding: 15px 30px;
+    position: relative;
+  }
+}
+
+#eleven .eleven-box .eleven-left {
+  width: 180px;
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  #eleven .eleven-box .eleven-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  #eleven .eleven-box .eleven-left img {
+    width: 35px;
+    height: auto;
+  }
+}
+
+#eleven .eleven-box .eleven-left h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+  width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+  #eleven .eleven-box .eleven-left h4 {
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  #eleven .eleven-box .eleven-left h4 br {
+    display: none;
+  }
+  #eleven .eleven-box .eleven-left h4:hover {
+    text-decoration: underline;
+  }
+}
+
+#eleven .eleven-box .eleven-right {
+  text-align: left;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1190px) {
+  #eleven .eleven-box .eleven-right {
+    max-width: 685px;
+  }
+}
+
+#eleven .eleven-box .eleven-right p {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  line-height: 1.55;
+}
+
+@media screen and (max-width: 1190px) {
+  #eleven .eleven-box .eleven-right p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #eleven .eleven-box .eleven-right p {
+    font-size: 12px;
+  }
+}
+
+#eleven .eleven-box .eleven-right p span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1190px) {
+  #eleven .eleven-box .eleven-right p span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #eleven .eleven-box .eleven-right p span {
+    font-size: 12px;
+  }
+}
+
+#bankoku {
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/bangkokbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#bankoku .bankoku-box {
+  text-align: left;
+  color: #fff;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #bankoku .bankoku-box {
+    margin-left: 30px;
+  }
+}
+
+#bankoku .bankoku-box h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 60px 0 27px;
+}
+
+#bankoku .bankoku-box p {
+  font-size: 12px;
+  padding-bottom: 22px;
+}
+
+#bankoku .bankoku-box p:last-child {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0 52px;
+}
+
+#bankoku .bankoku-box ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#bankoku .bankoku-box li {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #bankoku .bankoku-box li {
+    font-size: 12px;
+  }
+}
+
+#twelve {
+  background-color: #F7C23B;
+  padding-bottom: 40px;
+}
+
+#twelve .inner > p {
+  padding: 25px 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1190px) {
+  #twelve .inner > p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #twelve .inner > p {
+    font-size: 12px;
+  }
+}
+
+#twelve span {
+  color: #fff;
+}
+
+#twelve .twelve-box {
+  margin: 0 auto;
+  width: 96.6%;
+  border: #fff 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin-top: 100px;
+}
+
+#twelve .twelve-box h2 {
+  position: absolute;
+  top: 0;
+  left: 19%;
+  -webkit-transform: translateY(-70%) translateX(1em);
+          transform: translateY(-70%) translateX(1em);
+  background-color: #F7C23B;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #twelve .twelve-box h2 {
+    left: 29%;
+  }
+}
+
+#twelve .twelve-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px 20px 55px;
+}
+
+@media screen and (max-width: 768px) {
+  #twelve .twelve-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin: 50px 30px 30px;
+  }
+}
+
+#twelve .twelve-content .tokuten {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 252px;
+  height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #twelve .twelve-content .tokuten {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+#twelve .twelve-content .tokuten h4 {
+  color: #EBBB52;
+  font-size: 24px;
+  margin-top: -23px;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  #twelve .twelve-content .tokuten h4 {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}
+
+#twelve .twelve-content .tokuten p {
+  width: 215px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #twelve .twelve-content .tokuten p {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .twelve-content:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#thirteen {
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/specialdetail.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+#thirteen h2 {
+  padding-bottom: 10px;
+}
+
+#thirteen p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0 40px;
+}
+
+@media screen and (max-width: 1190px) {
+  #thirteen p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #thirteen p {
+    font-size: 12px;
+  }
+}
+
+#thirteen h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 1190px) {
+  #thirteen h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #thirteen h3 {
+    font-size: 18px;
+  }
+}
+
+#thirteen h3::before, #thirteen h3::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#thirteen h3::before {
+  border-left: solid 4px #fff;
+  border-top: solid 4px #fff;
+  top: 0px;
+  left: 0px;
+}
+
+#thirteen h3::after {
+  border-right: solid 4px #fff;
+  border-bottom: solid 4px #fff;
+  bottom: 0px;
+  right: 0px;
+}
+
+#yellow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #EBB94D transparent transparent transparent;
+  border-width: 25px 25px 0 25px;
+}
+
+#fourteen {
+  padding-bottom: 80px;
+}
+
+#fourteen h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 1190px) {
+  #fourteen h4 {
+    font-size: 16px;
+  }
+}
+
+#fourteen .fourteen-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1190px) {
+  #fourteen .fourteen-box {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #fourteen .fourteen-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+#fourteen .fourteen-box img {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  #fourteen .fourteen-box img {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+#fourteen .fourteen-content {
+  max-width: 635px;
+  font-size: 14px;
+  text-align: left;
+  color: #333333;
+}
+
+@media screen and (max-width: 1190px) {
+  #fourteen .fourteen-content {
+    max-width: 755px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #fourteen .fourteen-content {
+    max-width: 910px;
+    margin: 40px auto 0;
+  }
+}
+
+#fourteen .fourteen-content p {
+  padding-bottom: 15px;
+}
+
+#fourteen .fourteen-content ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 20px 0 35px;
+}
+
+#contact {
+  background-color: #EBB94D;
+  padding-bottom: 70px;
+}
+
+#contact p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0 10px;
+}
+
+@media screen and (max-width: 1190px) {
+  #contact p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact p {
+    font-size: 12px;
+  }
+}
+
+#contact form {
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #contact form {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+#contact form input, #contact form textarea {
+  width: 100%;
+  display: block;
+  padding: 20px 10px;
+  border-radius: 6px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#contact form input:last-child, #contact form textarea:last-child {
+  background-color: #DA6B64;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2em;
+  text-indent: 2em;
+  padding: 13px 0;
+}
+
+#contact form textarea {
+  height: 60px;
+  margin-top: 48px;
+}
+
+#contact .submit {
+  margin-left: 20px;
+  margin-top: 37px;
+}
+
+#puestion {
+  padding-bottom: 60px;
+}
+
+#puestion h2 {
+  margin-bottom: 28px;
+}
+
+#puestion .puestion-box {
+  text-align: left;
+  width: 83%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+#puestion .puestion-box a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border: #E5E5E5 .7px solid;
+  width: 100%;
+  display: block;
+  padding: 17px 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (max-width: 1190px) {
+  #puestion .puestion-box a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #puestion .puestion-box a {
+    font-size: 15px;
+    padding: 13px 26px 13px 22px;
+  }
+}
+
+#puestion .puestion-box a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 1.5em;
+  left: .5em;
+  width: 10px;
+  height: 3px;
+  background-color: #0e3da1;
+}
+
+#puestion .puestion-box a:hover {
+  text-decoration: underline;
+}
+
+#puestion .puestion-box p {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.55;
+  border-bottom: #e5e5e550  .3px solid;
+  border-right: #e5e5e53a  .001px solid;
+  border-left: #e5e5e538  .001px solid;
+  padding: 20px 20px 32px;
+}
+
+@media screen and (max-width: 1190px) {
+  #puestion .puestion-box p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #puestion .puestion-box p {
+    font-size: 12px;
+  }
+}
+
+.mark1::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 1.3em;
+  right: 1.2em;
+  width: 8px;
+  height: 8px;
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(45deg);
+}
+
+.mark2::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 1.3em;
+  right: 1.2em;
+  width: 8px;
+  height: 8px;
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+footer {
+  text-align: center;
+  background-color: #ECECEC;
+  font-size: 10px;
+  padding: 40px 0 25px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+footer .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+footer .sns .fb-like {
+  margin: 7px 0 0 4px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #779ac0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #23537D;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  background-color: #ECECEC;
+  position: fixed;
+  bottom: 90px;
+  right: 55px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    width: 45px;
+    height: 50px;
+    bottom: 40px;
+    right: 10px;
+  }
+}
+
+button::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 2.2em;
+  right: 1.9em;
+  width: 12px;
+  height: 12px;
+  border-right: 7px solid #444;
+  border-bottom: 7px solid #444;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 768px) {
+  button::after {
+    top: 1.6em;
+    right: 1.3em;
+    width: 8px;
+    height: 8px;
+    border-right: 3px solid #444;
+    border-bottom: 3px solid #444;
+  }
+}
+/*# sourceMappingURL=style.css.map */

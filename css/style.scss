@@ -1,0 +1,1512 @@
+
+$breakpoint-sm: 768px !default;
+$breakpoint-md: 1190px !default;
+$breakpoint-tt: 990px !default;
+
+
+$breakpoint-down: (
+  'sm': 'screen and (max-width: 768px)',
+  'md': 'screen and (max-width: 1190px)',
+  'tt': 'screen and (max-width: 990px)'
+) !default;
+
+@mixin mq-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+header{
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    position: relative;
+    @include mq-down(sm){
+      padding: 6px 15px;
+    }
+  }
+
+  h1{
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 1.4rem;
+    @include mq-down(){
+      font-size: 11px;
+    }
+    @include mq-down(sm){
+      font-size: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .head1{
+    background-color: #D84840;
+    padding: 13px 43px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    @include mq-down(){
+      font-size: 11px;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .head2{
+    background-color: #D84840;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#top{
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 120px 0 110px;
+  @include mq-down(sm){
+    padding: 25px 0 30px;
+  }
+  
+  h2{
+    font-size: 28px;
+    line-height: 2;
+    margin-bottom: 5px;
+    font-weight: bold;
+    @include mq-down(){
+      font-size: 24px;
+    }
+    @include mq-down(sm){
+      font-size: 18px;
+    }
+  }
+
+  p{
+    font-size: 20px;
+    margin-top: 30px;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+  }
+}
+
+@mixin fontSize($size:20px) {
+  font-size: $size;
+  font-weight: bold;
+}
+
+#second{
+  background-color: #EBB94D;
+  text-align: center;
+  color: #fff;
+  padding: 35px 0;
+  p{
+    @include fontSize();
+    margin-bottom: 25px;
+    @include mq-down(){
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+  }
+  a{
+    background-color: #D84840;
+    padding:36px 25% ;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 45px;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.8;
+    min-width: 295px;
+    @include mq-down(){
+      font-size: 18px;
+      padding:26px 25% ;
+    }
+    @include mq-down($breakpoint:sm){
+      font-size: 16px;
+      padding:26px 18% ;
+    }
+  }
+  a:hover{
+    opacity: 1;
+  }
+  
+  
+
+  p:nth-child(2){
+    background-color: #F9F2F4;
+    color: #C7254E;
+    width: 465px;
+    border-radius: 3px;
+    font-size: 16.5px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    @include mq-down(){
+      font-size: 14.4px;
+      margin-bottom: 47px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+  }
+
+  p:nth-child(n+4){
+    font-size: 23px;
+    margin-top: 45px;
+    @include mq-down(){
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+  }
+
+  p:nth-child(4){
+    margin-top: 100px;
+    @include mq-down(){
+      margin-top: 60px;
+    }
+  }
+
+  .sns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    div{
+      margin-top: 7px;
+      margin-left: 5px;
+    }
+  }
+
+}
+
+@mixin sectionImg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#third{
+  text-align: center;
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 115px;
+  position: relative;
+  @include mq-down(){
+    padding-bottom: 200px;
+  }
+  @include mq-down(sm){
+    padding-bottom: 60px;
+  }
+
+  p{
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+    span{
+      font-weight: bold;
+      background: linear-gradient(transparent 70%, #EBB94D 70%);
+    }
+  }
+
+  p:nth-child(5){
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EBB94D;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 605px;
+    left: 50%;
+    margin-left: -40px;
+    @include mq-down(){
+      font-size: 12px;
+      width: 60px;
+      height: 60px;
+      top: 598px;
+    }
+  }
+
+}
+
+.br::before{
+  @include mq-down(sm){
+    content: "\A" ;
+	white-space: pre ;
+  }
+
+}
+
+$bar-style: solid; 
+$bar-size: 3px;
+$bar-color: #EBB94D;
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+	padding: 80px 10%;
+	position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  @include mq-down(){
+    font-size: 24px;
+    width: 610px;
+  }
+  @include mq-down(sm){
+    width: 430px;
+    padding: 50px 6%;
+    font-size: 18px;
+  }
+	&::before, &::after {
+	    content:'';
+	    width: 50px;
+	    height: 50px;
+	    position: absolute;
+	}
+	&::before {
+	    border-left: $bar-style $bar-size $bar-color;
+	    border-top: $bar-style $bar-size $bar-color;
+	    top: 40px;
+	    left: 0px;
+	}
+	&::after {
+	    border-right: $bar-style $bar-size $bar-color;
+	    border-bottom: $bar-style $bar-size $bar-color;
+	    bottom: 40px;
+	    right: 0px;
+	}
+}
+
+#fourth{
+  background-color: #FDF5E0;
+  margin-top: -40px;
+  text-align: center;
+  padding: 40px 0 70px;
+  width: 100%;
+  .inner{
+    max-width: 1200px;
+  }
+  .inner>p{
+    @include fontSize();
+    padding-bottom: 40px;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+  }
+  .fourth-box{
+    width: 97.8%;
+    padding: 35px 0 50px ;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 7px;
+    border: #EBB94D 2px solid;
+    box-sizing: border-box;
+    >p{
+      @include fontSize();
+      padding-bottom: 25px;
+      @include mq-down(){
+        font-size: 16px;
+      }
+      @include mq-down(sm){
+        font-size: 15px;
+      }
+    }
+  }
+  .fourth-skill{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .fourth-content{
+    padding: 0 14px;
+    width: 115px;
+    @include mq-down(){
+      font-size: 12px;
+    }
+    @include mq-down(sm){
+      font-size: 10px;
+    }
+    img{
+      @include mq-down(sm){
+        width: auto;
+        height: 35px;
+      }
+    }
+  }
+}
+
+h2{
+  font-size: 28px;
+  padding: 63px 0 14px;
+  font-weight: bold;
+  @include mq-down(){
+    font-size: 24px;
+    padding-top: 58px;
+  }
+  @include mq-down(sm){
+    font-size: 18px;
+  }
+}
+#fifth{
+  text-align: center;
+  font-weight: bold;
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbg.jpg);
+  @include sectionImg();
+  color: #fff;
+  padding-bottom: 40px;
+  .inner>p{
+    @include fontSize();
+    padding: 8px 0;
+    @include mq-down(){
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    @include mq-down(sm){
+      font-size: 13px;
+    }
+    span{
+      color: #EBB94D;
+    }
+  }
+  .fifth-box{
+    display: flex;
+    justify-content: center;
+    padding: 22px 5px 0;
+    @include mq-down(){
+      flex-direction: column;
+      align-items: center;
+    }
+    .fifth-content{
+      margin: 0 9px;
+      width: 375px;
+      box-sizing: border-box;
+      padding: 30px 30px 10px;
+      background-color: #fff;
+      border-radius: 4px;
+      color: #000;
+      @include mq-down(){
+        margin-bottom: 20px;
+        width: 436px;
+      }
+      @include mq-down(sm){
+        padding: 10px 30px;
+      }
+      .step{
+        color: #fff;
+        background-color: #EBB94D;
+        width: 100%;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-bottom: 35px;
+        @include mq-down(sm){
+          font-size: 12px;
+          margin-bottom: 15px;
+        }
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 25px;
+        @include mq-down(){
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+}
+
+#blue{
+  background-color: #036EA9;
+  text-align: center;
+  padding: 38px 0;
+  color: #fff;
+  @include mq-down(sm){
+   padding: 20px 0;
+  }
+  p{
+    @include fontSize();
+    line-height: 1.7;
+    span{
+      color: #EBB94D;
+    }
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+}
+
+#six{
+  text-align: center;
+  padding-bottom: 55px;
+  small{
+    font-size: 16px;
+  }
+  p{
+    font-size: 20px;
+    padding-top: 25px;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+    }
+  }
+  .six-box{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 95%;
+    margin: 0 auto;
+    img{
+      margin: 0 22px;
+      width: 20%;
+      height: auto
+    }
+  }
+  p:last-child{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -25px;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+}
+
+#seven{
+  text-align: center;
+  background-color: #FFF4E0;
+  @include mq-down(sm){
+    padding-bottom: 40px;
+  }
+  h3{
+    padding: 57.5px;
+    @include mq-down(sm){
+      padding: 50px 6%;
+    }
+  }
+  span{
+    font-size: 20px;
+    @include mq-down(){
+      font-size: 16px;
+    }
+  }
+  .seven-img-box{
+    display: flex;
+    justify-content: center;
+    @include mq-down($breakpoint:tt){
+      flex-direction: column;
+      align-items: center;
+    }
+    .seven-img-content{
+      max-width: 360px;
+      margin: 0 15px;
+      text-align: left;
+      @include mq-down(){
+        max-width: 300px;
+      }
+      @include mq-down($breakpoint:tt){
+        max-width: 805px;
+        text-align: center;
+      }
+      h4{
+        @include fontSize();
+        color: #EBB94D;
+        padding: 5px 0 10px;
+        @include mq-down(){
+          font-size: 16px;
+        }
+      }
+      img{
+        width: 100%;
+        @include mq-down(){
+          width: 300px;
+        }
+        @include mq-down(sm){
+          width: 95%;
+          height: 120px;
+        }
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.55;
+        @include mq-down(){
+          font-size: 14px;
+        }
+        @include mq-down($breakpoint:tt){
+          font-size: 14px;
+          text-align: left;
+        }
+        @include mq-down(sm){
+          font-size: 12px;
+          margin: 10px 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .seven-box{
+    background-color: #fff;
+    border-radius: 7px;
+    border: #EBB94D 2px solid;
+    box-sizing: border-box;
+    width: 97.8%;
+    margin: 50px auto 40px;
+    @include mq-down($breakpoint:tt){
+      width: 85%;
+      margin: 0 auto;
+    }
+    @include mq-down(sm){
+      width: 95%;
+    }
+    h2{
+      color: #EBB94D;
+      margin-top: -20px;
+      @include mq-down($breakpoint:tt){
+        font-size: 24px;
+      }
+      @include mq-down(sm){
+        font-size: 18px;
+        margin-top: -40px
+      }
+    }
+    h4{
+      @include fontSize();
+      @include mq-down($breakpoint:tt){
+        font-size: 16px;
+      }
+      @include mq-down(sm){
+        font-size: 15px;
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.55;
+      font-weight: bold;
+      padding: 15px 0 52px;
+      @include mq-down($breakpoint:tt){
+        font-size: 14px;
+      }
+      @include mq-down(sm){
+        font-size: 10px;
+        padding: 10px 0;
+      }
+    }
+  }
+  p:last-child{
+    padding-bottom: 50px;
+    max-width: 1170px;
+    margin: 0 auto;
+    @include mq-down($breakpoint:tt){
+      font-size: 12px;
+      max-width: 850px;
+      margin: 40px auto 0;
+    }
+    @include mq-down(sm){
+      font-size: 10px;
+      margin-top: 0px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+section{
+  text-align: center;
+}
+
+#eight{
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/teacherbg.jpg);
+  @include sectionImg();
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 20px 0px 40px;
+  .eight-box{
+    display: flex;
+    justify-content: center;
+    @include mq-down(sm){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .inner>p{
+    padding: 20px 0 210px;
+    font-size: 16px;
+    font-weight: bold;
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+  .eight-content{
+    width: 31%;
+    margin: 0 15px;
+    padding:  40px;
+    border: #fff 2px solid;
+    position: relative;
+    font-size: 16px;
+    @include mq-down(sm){
+      width: 83%;
+      margin-bottom: 125px;
+      padding: 40px 30px 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    img{
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 18%;
+      transform: translateY(-85%) translateX(1em);
+      @include mq-down(sm){
+        left: 35%;
+        transform: translateY(-75%) translateX(1em);
+        width: 125px;
+        height: 125px;
+      }
+    }
+    p{
+      padding-bottom: 15px;
+      line-height: 1.55;
+      @include mq-down(sm){
+        font-size: 12px;
+      }
+    }
+    p:last-child{
+      text-align: left;
+      @include mq-down(sm){
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+#yellow{
+  position: relative;
+  background-color: #EBB94D;
+  color: #fff;
+  padding: 40px 0;
+  p{
+    background-color: #fff;
+    color: #EBB94D;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  $bar-style: solid; 
+  $bar-size: 4px;
+  $bar-color: #fff;
+  h3 {
+  font-size: 28px;
+  font-weight: bold;
+	padding: 20px;
+	position: relative;
+  @include mq-down(){
+    font-size: 18px;
+  }
+  @include mq-down(sm){
+    font-size: 14px;
+  }
+	&::before, &::after {
+	    content:'';
+	    width: 50px;
+	    height: 50px;
+	    position: absolute;
+	}
+	&::before {
+	    border-left: $bar-style $bar-size $bar-color;
+	    border-top: $bar-style $bar-size $bar-color;
+	    top: 0px;
+	    left: 0px;
+	}
+	&::after {
+	    border-right: $bar-style $bar-size $bar-color;
+	    border-bottom: $bar-style $bar-size $bar-color;
+	    bottom: 0px;
+	    right: 0px;
+	}
+}
+}
+#yellow::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #EBB94D transparent transparent transparent;
+  border-width: 25px 25px 0 25px;
+
+}
+
+#nine{
+  padding-bottom: 20px;
+  h2{
+    margin-top: -20px;
+  }
+  h4{
+    font-size: 16px;
+    font-weight: bold;
+    @include mq-down(){
+      font-size: 14px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+  p{
+    padding: 35px 0 30px;
+    @include mq-down(){
+      font-size: 12px;
+    }
+  }
+  .nine-box{
+    display: flex;
+    max-width: 765px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    @include mq-down(){
+      margin: 0 0 40px;
+    }
+    img{
+      box-sizing: border-box;
+      border: #EBB94D 2px solid;
+      width: 30%;
+      height: auto;
+    }
+    aside{
+      width: 485px;
+      text-align: left;
+      color: #777777;
+      font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+      padding: 0 6px;
+      p{
+        font-size: 18px;
+        margin:-17px 0 -18px;
+      }
+      span{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+#ten{
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg);
+  @include sectionImg();
+  color: #fff;
+  padding-bottom: 80px;
+  p{
+    font-size: 16px;
+    font-weight: bold;
+    @include mq-down(){
+      font-size: 14px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+  .ten-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    @include mq-down($breakpoint:tt){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .ten-content{
+    width: 375px;
+    border: #036EA9 2px solid;
+    border-radius: 5px;
+    margin: 0 15px;
+    @include mq-down(){
+      width: 270px;
+      margin: 9px 0;
+    }
+    @include mq-down($breakpoint:tt){
+      width: 585px;
+    }
+    @include mq-down(sm){
+      width: 95%;
+    }
+    h4{
+      @include fontSize();
+      padding: 20px 0;
+      background-color: #036EA9;
+      @include mq-down(){
+        font-size: 16px;
+      }
+      @include mq-down(sm){
+        font-size: 15px;
+      }
+    }
+    li{
+      @include fontSize(17px);
+      color: #000;
+      padding: 10px 15px;
+      border-bottom: #ccc .4px dotted;
+      background-color: #fff;
+      @include mq-down(){
+        font-size: 14px;
+      }
+      @include mq-down(sm){
+        font-size: 12px;
+      }
+      &:first-child{
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+#blue2{
+  background-color: #036EA9;
+  color: #fff;
+  p{
+    @include fontSize();
+    padding: 40px 0;
+    line-height: 1.55;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 15px;
+      padding: 20px 0;
+    }
+  }
+}
+
+#eleven{
+  padding-bottom: 40px;
+  .flow{
+    margin: 35px 0 40px;
+  }
+  .inner>img{
+    width: 80%;
+    @include mq-down(sm){
+      display: none;
+    }
+  }
+  .eleven-box{
+    background-color: #FDF5E0;
+    max-width: 96.6%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px 30px 40px;
+    border-radius: 7px;
+    @include mq-down(){
+      max-width: 90%;
+    }
+    @include mq-down(sm){
+      flex-direction: column;
+      margin: 5px auto;
+      padding: 15px 30px;
+      position: relative;
+    }
+    .eleven-left{
+      width: 180px;
+      margin-right: 25px;
+      @include mq-down(sm){
+        display: flex;
+        align-items: center;
+        width: 100%;
+        img{
+          width: 35px;
+          height: auto;
+        }
+      }
+     
+      h4{
+        @include fontSize(18px);
+        padding-top: 20px;
+        width: 180px;
+        @include mq-down(sm){
+          br{
+            display: none;
+          }
+          width: 100%;
+          text-align: left;
+          padding-top: 0;
+          padding-left: 15px;
+          font-size: 16px;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .eleven-right{
+      text-align: left;
+      padding-top: 10px;
+      
+      @include mq-down(){
+        max-width: 685px;
+      }
+      p{
+        @include fontSize(16px);
+        padding-bottom: 20px;
+        line-height: 1.55;
+        @include mq-down(){
+          font-size: 14px;
+        }
+        @include mq-down(sm){
+          font-size: 12px;
+        }
+        span{
+          font-size: 14px;
+          font-weight: normal;
+          @include mq-down(){
+            font-size: 12px;
+          }
+          @include mq-down(sm){
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+#bankoku{
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/bangkokbg.jpg);
+  @include sectionImg();
+  .bankoku-box{
+    text-align: left;
+    color: #fff;
+    margin-left: 100px;
+    @include mq-down(sm){
+      margin-left: 30px
+    }
+    h4{
+      @include fontSize(24px);
+      padding: 60px 0 27px;
+    }
+    p{
+      font-size: 12px;
+      padding-bottom: 22px;
+      &:last-child{
+        @include fontSize(16px);
+        padding: 5px 0 52px;
+      }
+    }
+    ul{
+      list-style: disc;
+      list-style-position: inside
+    }
+    li{
+      @include fontSize(14px);
+      padding-bottom: 15px;
+      @include mq-down(sm){
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+#twelve{
+  background-color: #F7C23B;
+  padding-bottom: 40px;
+  .inner>p{
+    padding: 25px 10px 0;
+    @include fontSize(16px);
+    @include mq-down(){
+      font-size: 14px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+  span{
+    color: #fff;
+  }
+  .twelve-box{
+    margin: 0 auto;
+    width: 96.6%;
+    border: #fff 2px solid;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 100px;
+    h2{
+      position: absolute;
+      top: 0;
+      left: 19% ;
+      transform: translateY(-70%) translateX(1em);
+      background-color: #F7C23B;
+      padding: 0 15px;
+      @include mq-down(sm){
+        left: 29%;
+      }
+    }
+  }
+  .twelve-content{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px 55px;
+    @include mq-down(sm){
+      flex-direction: column;
+      position: relative;
+      margin: 50px 30px 30px;
+    }
+    .tokuten{
+      background-color: #fff;
+      border-radius: 50%;
+      width: 252px;
+      height: 252px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include mq-down(sm){
+        width: 60px;
+        height: 60px;
+        margin-bottom: 30px;
+      }
+      h4{
+        color: #EBBB52;
+        font-size: 24px;
+        margin-top: -23px;
+        margin-bottom: 18px;
+        @include mq-down(sm){
+          font-size: 12px;
+          margin-top: 15px;
+        }
+      }
+      p{
+        width: 215px;
+        @include fontSize(14px);
+        @include mq-down(sm){
+          position: absolute;
+          width: 70%;
+          left: 20%;
+          font-size: 12px;
+          color: #fff;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.twelve-content:last-child{
+  @include mq-down(sm){
+      margin-bottom: 0;
+    }
+}
+
+#thirteen{
+  background-image: url(https://isara.life/wp-content/themes/isara_v2/img/specialdetail.jpg);
+  @include sectionImg();
+  color: #fff;
+  padding-bottom: 40px;
+  h2{
+    padding-bottom: 10px;
+  }
+  p{
+    @include fontSize();
+    padding: 20px 0 40px;
+    @include mq-down(){
+      font-size: 16px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+  $bar-style: solid; 
+  $bar-size: 4px;
+  $bar-color: #fff;
+  h3 {
+  font-size: 28px;
+  font-weight: bold;
+	padding: 20px;
+	position: relative;
+  @include mq-down(){
+    font-size: 24px;
+  }
+  @include mq-down(sm){
+    font-size: 18px;
+  }
+	&::before, &::after {
+	    content:'';
+	    width: 50px;
+	    height: 50px;
+	    position: absolute;
+	}
+	&::before {
+	    border-left: $bar-style $bar-size $bar-color;
+	    border-top: $bar-style $bar-size $bar-color;
+	    top: 0px;
+	    left: 0px;
+	}
+	&::after {
+	    border-right: $bar-style $bar-size $bar-color;
+	    border-bottom: $bar-style $bar-size $bar-color;
+	    bottom: 0px;
+	    right: 0px;
+	}
+}
+}
+#yellow::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #EBB94D transparent transparent transparent;
+  border-width: 25px 25px 0 25px;
+}
+
+#fourteen{
+  padding-bottom: 80px;
+  h4{
+    @include fontSize();
+    padding: 40px 0;
+    @include mq-down(){
+      font-size: 16px;
+    }
+  }
+  .fourteen-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    @include mq-down(){
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+    @include mq-down($breakpoint:tt){
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    img{
+      margin-right: 30px;
+      @include mq-down($breakpoint:tt){
+        width: 98%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+  .fourteen-content{
+    max-width: 635px;
+    font-size: 14px;
+    text-align: left;
+    color: #333333;
+    @include mq-down(){
+      max-width: 755px;
+    }
+    @include mq-down($breakpoint:tt){
+      max-width: 910px;
+      margin: 40px auto 0; 
+    }
+    
+    p{
+      padding-bottom: 15px;
+    }
+    ul{
+      list-style: disc;
+      list-style-position: inside;
+      padding: 20px 0 35px;
+    }
+  }
+}
+
+#contact{
+  background-color: #EBB94D;
+  padding-bottom: 70px;
+  p{
+    @include fontSize(16px);
+    padding: 5px 0 10px;
+    @include mq-down(){
+      font-size: 14px;
+    }
+    @include mq-down(sm){
+      font-size: 12px;
+    }
+  }
+  form{
+    width: 65%;
+    margin: 0 auto;
+    @include mq-down(sm){
+      width: 90%;
+      margin: 0 auto;
+    }
+    input{
+      width: 100%;
+      display: block;
+      padding: 20px 10px;
+      border-radius: 6px;
+      border: none;
+      margin: 0 auto;
+      margin-top: 25px;
+      &:last-child{
+        background-color: #DA6B64;
+        color: #fff;
+        border-radius: 15px;
+        @include fontSize();
+        letter-spacing: 2em;
+        text-indent: 2em;
+        padding: 13px 0;
+      }
+    }
+    textarea{
+      @extend input;
+      height: 60px;
+      margin-top: 48px;
+    }
+  }
+  .submit{
+    margin-left: 20px;
+    margin-top: 37px;
+  }
+}
+
+#puestion{
+  padding-bottom: 60px;
+  h2{
+    margin-bottom: 28px;
+  }
+  .puestion-box{
+    text-align: left;
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 5px;
+    a{
+      text-decoration: none;
+      color: #000;
+      @include fontSize();
+      border:#E5E5E5 .7px solid;
+      width: 100%;
+      display: block;
+      padding: 17px 24px;
+      box-sizing: border-box;
+      position: relative;
+      @include mq-down(){
+        font-size: 16px;
+      }
+      @include mq-down(sm){
+        font-size: 15px;
+        padding: 13px 26px 13px 22px;
+      }
+      &::before{
+        display: block;
+        content: '';
+        position: absolute;
+        top: 1.5em;
+        left: .5em;
+        width: 10px;
+        height: 3px;
+        background-color: rgb(14, 61, 161);
+      }
+      // &::after{
+      //   display: block;
+      //   content: '';
+      //   position: absolute;
+      //   top: 1.3em;
+      //   right: 1.2em;
+      //   width: 8px;
+      //   height: 8px;
+      //   border-right: 5px solid #ccc;
+      //   border-bottom: 5px solid #ccc;
+      //   -webkit-transform: rotate(-135deg);
+      // }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    p{
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+      @include fontSize(16px);
+      line-height: 1.55;
+      border-bottom: #e5e5e550  .3px solid;
+      border-right:  #e5e5e53a  .001px solid;
+      border-left:  #e5e5e538  .001px solid;
+      padding: 20px 20px 32px;
+      @include mq-down(){
+        font-size: 14px;
+      }
+      @include mq-down(sm){
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.mark1::after{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 1.3em;
+  right: 1.2em;
+  width: 8px;
+  height: 8px;
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(45deg);
+}
+
+.mark2::after{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 1.3em;
+  right: 1.2em;
+  width: 8px;
+  height: 8px;
+  border-right: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+footer{
+  text-align: center;
+  background-color: #ECECEC;
+  font-size: 10px;
+  padding: 40px 0 25px;
+  @include mq-down(sm){
+    padding: 20px 10px;
+  }
+  .sns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    .fb-like{
+      margin: 7px 0 0 4px;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #779ac0;
+    &:hover{
+      text-decoration: underline;
+      color: #23537D;
+    }
+  }
+}
+
+button{
+  width: 70px;
+  height: 70px;
+  background-color: #ECECEC;
+  position: fixed;
+  bottom: 90px;
+  right: 55px;
+  border: none;
+  outline: none;
+  @include mq-down(sm){
+    width: 45px;
+    height: 50px;
+    bottom: 40px;
+    right: 10px;
+  }
+  &::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 2.2em;
+    right: 1.9em;
+    width: 12px;
+    height: 12px;
+    border-right: 7px solid #444;
+    border-bottom: 7px solid #444;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    @include mq-down(sm){
+      top: 1.6em;
+      right: 1.3em;
+      width: 8px;
+      height: 8px;
+      border-right: 3px solid #444;
+      border-bottom: 3px solid #444;
+    }
+  }
+}
